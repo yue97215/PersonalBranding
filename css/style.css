@@ -176,11 +176,14 @@ header {
 }
 /* Blog Section */
 .blogSection{
+    width: 1432px;
     margin: 0 auto;
+    padding: 80px ;
 }
 .blogArea{
     display: flex;
     align-items: center;
+    justify-content: center;
     li{
         list-style: none;
     }
@@ -196,7 +199,7 @@ header {
 .blogCard{
     width: 416px;
     background-color: #fff;
-    margin-right: 24px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     h3{
