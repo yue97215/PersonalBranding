@@ -1,0 +1,310 @@
+/* 基本樣式保持不變 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    margin: 0 auto;
+    overflow-x: hidden; /* 防止水平滾動 */
+}
+/* 區塊標題-同樣式 */
+.themeBlock{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+/* Header樣式 */
+header {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.heroSection {
+    display: flex;
+    position: relative;
+}
+
+.heroLeft {
+    width: 50%;
+    height: 834px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heroRight {
+    width: 50%;
+    height: 834px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heroText {
+    padding: 300px 80px;
+}
+
+.name {
+    font-weight: 900;
+    font-size: 90px;
+    color: #0027d5;
+    margin-bottom: 0;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #0027d5;
+}
+.introSection{
+    margin-bottom: 200px;
+}
+.intro{
+    width: 800px;
+    background-color: #fff;
+    padding: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    position: absolute;
+    right: 80px;
+    bottom: -300px;
+    z-index: 2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+.introTitle{
+    margin-bottom: 16px;
+}
+.introText{
+    margin-bottom: 16px;
+}
+.social a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+    margin-right: 4px;
+    margin-bottom: 0;
+}
+/* Serve Section */
+.serveSection{
+    width: 1296px;
+    margin: 0 auto;
+}
+.serveCard, .serveCard_reverse{
+    padding: 40px;
+    position: relative;
+    margin: 0 60px;
+    h3{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+}
+.serveCard_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.serverImg{
+    object-fit: cover;
+}
+.serveText{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    width: 480px;
+    height: 210px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+}
+.serveText_reverse{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    width: 480px;
+    height: 210px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 60px;
+}
+.line-divider{
+    width: 40px;
+    height: 3px;
+    background-color: #0027d5;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.serveMore{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/* Blog Section */
+.blogSection{
+    margin: 0 auto;
+}
+.blogArea{
+    display: flex;
+    align-items: center;
+    li{
+        list-style: none;
+    }
+}
+.arrow{
+    a{
+        text-decoration: none;
+        font-size: 44px;
+        color: #0027d5;
+        cursor: pointer;
+    }
+}
+.blogCard{
+    width: 416px;
+    background-color: #fff;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+}
+.blogImg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tag {
+    font-size: 24px;
+    text-decoration: none;
+}
+.tag:hover {
+    color: navy;
+}
+.blogNew, .blogHot {
+    border-radius: 30px;
+    padding: 6px;
+    width: 90px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+.blogText{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 16px;
+}
+.blogMore {
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 8px 16px;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    color: #4b4b4b;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.blogMore:hover {
+    background-color: blue;
+    color: #fffacd;
+    border: 1px solid #fff;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Footer */
+.copyRight {
+    font-weight: 500;
+    text-align: center;
+    margin: 24px 0;
+}
+
+/* ========== 響應式設計 ========== */
+
+/* 平板版 (768px - 996px) */
+@media (max-width: 996px) {
+    .heroSection {
+        flex-direction: column;
+    }
+    
+    .heroLeft, .heroRight {
+        width: 100%;
+        height: 500px;
+    }
+    
+    
+}
+
+/* 手機版 (最大768px) */
+@media (max-width: 768px) {
+    /* Header調整 */
+    header {
+        height: 70px;
+        padding: 0 15px;
+    }
+    
+    .menu {
+        font-size: 22px;
+        gap: 20px;
+    }
+    
+    /* Hero Section手機版調整 */
+    .heroLeft{
+        height: 375px;
+    }
+    .heroRight {
+        height: 180px;
+    }
+    
+    
+}
